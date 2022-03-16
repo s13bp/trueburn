@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TRUEBURN NFTs</title>
+  <script src="https://cdn.jsdelivr.net/npm/@walletconnect/web3-provider@1.7.1/dist/umd/index.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+  <script src = "https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Jura:wght@300;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<script src="https://use.fontawesome.com/aa95071b26.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+</head>
+<body  >
+    <div style=" display: flex; float: right; width: 20vw;">
+      <div class="button-container-1" data-aos="fade-down"
+      data-aos-delay="1000"
+      data-aos-duration="1500">
+        <span class="mas">WALLETCONNECT</span>
+        <button  onclick="connectWC()" id='work' type="button" name="Hover">WALLETCONNECT</button>
+      </div>
+
+      <div class="button-container-2" data-aos="fade-down"
+      data-aos-delay="1000"
+      data-aos-duration="500">
+        <span  class="mas">METAMASK</span>
+        <button id="connz" type="button" name="Hover">METAMASK</button>
+      </div>
+
+  
+    </div>
+    <div   style="color: #FFF; position: fixed; margin-top: 10px; font-family:'Jura', sans-serif;" >  <p>WALLET - <span id="wallet-address" ></span></p></div>
+					
+    <br><br><br><br><br><br><br>
+    <div class="w3-container"  >
+      <h1 class="w3-center" style="font-size: 100px; font-family: 'Allerta Stencil', sans-serif;"><span data-aos="fade-right"
+        
+        data-aos-duration="1500" >TRUEBURN</span> <span data-aos="zoom-in-down"
+        data-aos-delay="1000"
+        data-aos-duration="500" >NFTs</span> </h1>
+        <br><br><br>
+        <p data-aos="fade-down"
+        data-aos-delay="2000"
+        data-aos-duration="500" class="w3-content w3-padding" style="background-color: rgba(0, 0, 0, 0.37);
+        backdrop-filter: blur(23px); border-radius: 10px; font-size: 20px; color: antiquewhite; font-family: 'Jura', sans-serif; text-align: center;">SOME INTRO TEXT HERE !!! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo, sequi eius officia asperiores esse ut tempora? Fuga nesciunt, perferendis facilis inventore repellendus, praesentium, dicta voluptatum quasi molestiae alias cumque. Quo laborum perferendis delectus cum beatae tempore sequi modi ut iusto. </p>
+    </div>
+<br><br><br><br><br>
+
+    <div id="body" style="padding-top: 3vh;">
+      <div class="card-main-wrapper" data-aos="fade-right"
+   
+      data-aos-duration="500">
+        <div class="card" style="background: url(../img/1.png)  ;    background-size:     cover;                    
+        background-repeat:   no-repeat;
+        background-position: center center;   ">
+          <div class="inner">
+            <div class="inkoti">
+              <p>
+                <span>trueburn</span>
+                <span>epic</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-main-wrapper" data-aos="fade-up"
+      data-aos-delay="500"
+      data-aos-duration="500">
+        <div class="card" style="background: url(../img/3.png)  ;    background-size:     cover;                    
+        background-repeat:   no-repeat;
+        background-position: center center;   " >
+          <div class="inner">
+            <div class="inkoti">
+              <p>
+                <span>trueburn</span>
+                <span>rare</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-main-wrapper" data-aos="fade-left"
+      data-aos-delay="1000"
+      data-aos-duration="500">
+        <div class="card" style="background: url(../img/21.png)  ;    background-size:     cover;                    
+        background-repeat:   no-repeat;
+        background-position: center center;   " >
+          <div class="inner">
+            <div class="inkoti">
+              <p>
+                <span>trueburn</span>
+                <span>lenendary</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="w3-container w3-content" data-aos="fade-down"
+    data-aos-delay="500"
+    data-aos-duration="1500">
+      <div class="button-container-3" style="width: 200px;height: 70px;">
+        <span class="masmint" style="font-size: 20px; color: rgb(163, 163, 163);">MINT NFT </span>
+        <button id="mintoza" type="button"  style="font-size: 20px;" name="Hover">MINT </button>
+      </div><br><br><br><br>
+
+    </div>
+    <script>
+    $('.card-main-wrapper').mouseover(function(e) {
+        $('.card-main-wrapper').mousemove(function(e) {
+          var cox = (e.pageX - $(this).offset().left - $(this).width()/2)/20;
+          var coy = ($(this).height()/2 - (e.pageY - $(this).offset().top))/20;
+          $(this).find('.card').css('transform','rotateY('+cox+'deg) rotateX('+coy+'deg)');
+          $(this).find('.inner').css('transform','translateX('+cox+'px) translateY('+(-coy)+'px)');
+        });
+      });
+      $('.card-main-wrapper').mouseleave(function(e) {
+          $(this).find('.card').css('transform','rotateY(0) rotateX(0)');
+          $(this).find('.inner').css('transform','translateX(0) translateY(0)');
+      });
+    </script>
+  <script type="text/javascript">
+    var account;
+
+    // https://docs.walletconnect.com/quick-start/dapps/web3-provider
+    var provider = new WalletConnectProvider.default({
+      rpc: {
+        1: "https://cloudflare-eth.com/", // https://ethereumnodes.com/
+        137: "https://polygon-rpc.com/", // https://docs.polygon.technology/docs/develop/network-details/network/
+        // ...
+
+      },
+      // bridge: 'https://bridge.walletconnect.org',
+    });
+
+    var connectWC = async () => {
+      await provider.enable();
+
+      //  Create Web3 instance
+      const web3 = new Web3(provider);
+      window.w3 = web3
+
+      var accounts  = await web3.eth.getAccounts(); // get all connected accounts
+      account = accounts[0]; // get the primary account
+    }
+
+
+    var sign = async (msg) => {
+      if (w3) {
+        return await w3.eth.personal.sign(msg, account)
+      } else {
+        return false
+      }
+    }
+
+    var contract = async (abi, address) => {
+      if (w3) {
+        return new w3.eth.Contract(abi, address)
+      } else {
+        return false
+      }
+    }
+
+    var disconnect = async () => {
+      // Close provider session
+      await provider.disconnect()
+    }
+
+
+    var address = "0x4b4f8ca8fb3e66b5ddafcebfe86312cec486dae1"
+    var abi = [{"inputs":[],"name":"count","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"increment","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"nonpayable","type":"function"}]
+
+
+  </script>
+  <script type="text/javascript">
+    var account = null;
+    var contract = null;
+  
+
+    const ABI = [
+{
+  "inputs": [
+    {
+      "internalType": "string",
+      "name": "_name",
+      "type": "string"
+    },
+    {
+      "internalType": "string",
+      "name": "_symbol",
+      "type": "string"
+    },
+    {
+      "internalType": "string",
+      "name": "_initBaseURI",
+      "type": "string"
+    }
+  ],
+  "stateMutability": "nonpayable",
+  "type": "constructor"
+},
+{
+  "anonymous": false,
+  "inputs": [
+    {
+      "indexed": true,
+      "internalType": "address",
+      "name": "owner",
+      "type": "address"
+    },
+    {
+      "indexed": true,
+      "internalType": "address",
+      "name": "approved",
+      "type": "address"
+    },
+    {
+      "indexed": true,
+      "internalType": "uint256",
+      "name": "tokenId",
+      "type": "uint256"
+    }
+  ],
+  "name": "Approval",
+  "type": "event"
+},
+{
+  "anonymous": false,
+  "inputs": [
+    {
+      "indexed": true,
+      "internalType": "address",
+      "name": "owner",
+      "type": "address"
+    },
+    {
+      "indexed": true,
+      "internalType": "address",
+      "name": "operator",
+      "type": "address"
+    },
+    {
+      "indexed": false,
+      "internalType": "bool",
+      "name": "approved",
+      "type": "bool"
+    }
+  ],
+  "name": "ApprovalForAll",
+  "type": "event"
+},
+{
+  "inputs": [
+    {
+      "internalType": "address",
+      "name": "to",
+      "type": "address"
+    },
+    {
+      "internalType": "uint256",
+      "name": "tokenId",
+      "type": "uint256"
+    }
+  ],
+  "name": "approve",
+  "outputs": [],
+  "stateMutability": "nonpayable",
+  "type": "function"
+},
+{
+  "inputs": [
+    {
+      "internalType": "address",
+      "name": "to",
+      "type": "address"
+    }
+  ],
+  "name": "mint",
+  "outputs": [],
+  "stateMutability": "payable",
+  "type": "function"
+},
+{
+  "anonymous": false,
+  "inputs": [
+    {
+      "indexed": true,
+      "internalType": "address",
+      "name": "previousOwner",
+      "type": "address"
+    },
+    {
+      "indexed": true,
+      "internalType": "address",
+      "name": "newOwner",
+      "type": "address"
+    }
+  ],
+  "name": "OwnershipTransferred",
+  "type": "event"
+},
+{
+  "inputs": [
+    {
+      "internalType": "bool",
+      "name": "_state",
+      "type": "bool"
+    }
+  ],
+  "name": "pause",
+  "outputs": [],
+  "stateMutability": "nonpayable",
+  "type": "function"
+},
+{
+  "inputs": [],
+  "name": "renounceOwnership",
+  "outputs": [],
+  "stateMutability": "nonpayable",
+  "type": "function"
+},
+{
+  "inputs": [
+    {
+      "internalType": "address",
+      "name": "from",
+      "type": "address"
+    },
+    {
+      "internalType": "address",
+      "name": "to",
+      "type": "address"
+    },
+    {
+      "internalType": "uint256",
+      "name": "tokenId",
+      "type": "uint256"
+    }
+  ],
+  "name": "safeTransferFrom",
+  "outputs": [],
+  "stateMutability": "nonpayable",
+  "type": "function"
+},
+{
+  "inputs": [
+    {
+      "internalType": "address",
+      "name": "from",
+      "type": "address"
+    },
+    {
+      "internalType": "address",
+      "name": "to",
+      "type": "address"
+    },
+    {
+      "internalType": "uint256",
+      "name": "tokenId",
+      "type": "uint256"
+    },
+    {
+      "internalType": "bytes",
+      "name": "_data",
+      "type": "bytes"
+    }
+  ],
+  "name": "safeTransferFrom",
+  "outputs": [],
+  "stateMutability": "nonpayable",
+  "type": "function"
+},
+{
+  "inputs": [
+    {
+      "internalType": "address",
+      "name": "operator",
+      "type": "address"
+    },
+    {
+      "internalType": "bool",
+      "name": "approved",
+      "type": "bool"
+    }
+  ],
+  "name": "setApprovalForAll",
+  "outputs": [],
+  "stateMutability": "nonpayable",
+  "type": "function"
+},
+{
+  "inputs": [
+    {
+      "internalType": "string",
+      "name": "_newBaseExtension",
+      "type": "string"
+    }
+  ],
+  "name": "setBaseExtension",
+  "outputs": [],
+  "stateMutability": "nonpayable",
+  "type": "function"
+},
+{
+  "inputs": [
+    {
+      "internalType": "string",
+      "name": "_newBaseURI",
+      "type": "string"
+    }
+  ],
+  "name": "setBaseURI",
+  "outputs": [],
+  "stateMutability": "nonpayable",
+  "type": "function"
+},
+{
+  "inputs": [
+    {
+      "internalType": "uint256",
+      "name": "_newCost",
+      "type": "uint256"
+    }
+  ],
+  "name": "setCost",
+  "outputs": [],
+  "stateMutability": "nonpayable",
+  "type": "function"
+},
+{
+  "inputs": [
+    {
+      "internalType": "uint256",
+      "name": "_newmaxMintAmount",
+      "type": "uint256"
+    }
+  ],
+  "name": "setmaxMintAmount",
+  "outputs": [],
+  "stateMutability": "nonpayable",
+  "type": "function"
+},
+{
+  "anonymous": false,
+  "inputs": [
+    {
+      "indexed": true,
+      "internalType": "address",
+      "name": "from",
+      "type": "address"
+    },
+    {
+      "indexed": true,
+      "internalType": "address",
+      "name": "to",
+      "type": "address"
+    },
+    {
+      "indexed": true,
+      "internalType": "uint256",
+      "name": "tokenId",
+      "type": "uint256"
+    }
+  ],
+  "name": "Transfer",
+  "type": "event"
+},
+{
+  "inputs": [
+    {
+      "internalType": "address",
+      "name": "from",
+      "type": "address"
+    },
+    {
+      "internalType": "address",
+      "name": "to",
+      "type": "address"
+    },
+    {
+      "internalType": "uint256",
+      "name": "tokenId",
+      "type": "uint256"
+    }
+  ],
+  "name": "transferFrom",
+  "outputs": [],
+  "stateMutability": "nonpayable",
+  "type": "function"
+},
+{
+  "inputs": [
+    {
+      "internalType": "address",
+      "name": "newOwner",
+      "type": "address"
+    }
+  ],
+  "name": "transferOwnership",
+  "outputs": [],
+  "stateMutability": "nonpayable",
+  "type": "function"
+},
+{
+  "inputs": [],
+  "name": "withdraw",
+  "outputs": [],
+  "stateMutability": "nonpayable",
+  "type": "function"
+},
+{
+  "inputs": [
+    {
+      "internalType": "address",
+      "name": "owner",
+      "type": "address"
+    }
+  ],
+  "name": "balanceOf",
+  "outputs": [
+    {
+      "internalType": "uint256",
+      "name": "",
+      "type": "uint256"
+    }
+  ],
+  "stateMutability": "view",
+  "type": "function"
+},
+{
+  "inputs": [],
+  "name": "baseExtension",
+  "outputs": [
+    {
+      "internalType": "string",
+      "name": "",
+      "type": "string"
+    }
+  ],
+  "stateMutability": "view",
+  "type": "function"
+},
+{
+  "inputs": [],
+  "name": "baseURI",
+  "outputs": [
+    {
+      "internalType": "string",
+      "name": "",
+      "type": "string"
+    }
+  ],
+  "stateMutability": "view",
+  "type": "function"
+},
+{
+  "inputs": [],
+  "name": "cost",
+  "outputs": [
+    {
+      "internalType": "uint256",
+      "name": "",
+      "type": "uint256"
+    }
+  ],
+  "stateMutability": "view",
+  "type": "function"
+},
+{
+  "inputs": [
+    {
+      "internalType": "uint256",
+      "name": "tokenId",
+      "type": "uint256"
+    }
+  ],
+  "name": "getApproved",
+  "outputs": [
+    {
+      "internalType": "address",
+      "name": "",
+      "type": "address"
+    }
+  ],
+  "stateMutability": "view",
+  "type": "function"
+},
+{
+  "inputs": [
+    {
+      "internalType": "address",
+      "name": "owner",
+      "type": "address"
+    },
+    {
+      "internalType": "address",
+      "name": "operator",
+      "type": "address"
+    }
+  ],
+  "name": "isApprovedForAll",
+  "outputs": [
+    {
+      "internalType": "bool",
+      "name": "",
+      "type": "bool"
+    }
+  ],
+  "stateMutability": "view",
+  "type": "function"
+},
+{
+  "inputs": [],
+  "name": "maxMintAmount",
+  "outputs": [
+    {
+      "internalType": "uint256",
+      "name": "",
+      "type": "uint256"
+    }
+  ],
+  "stateMutability": "view",
+  "type": "function"
+},
+{
+  "inputs": [],
+  "name": "maxSupply",
+  "outputs": [
+    {
+      "internalType": "uint256",
+      "name": "",
+      "type": "uint256"
+    }
+  ],
+  "stateMutability": "view",
+  "type": "function"
+},
+{
+  "inputs": [],
+  "name": "name",
+  "outputs": [
+    {
+      "internalType": "string",
+      "name": "",
+      "type": "string"
+    }
+  ],
+  "stateMutability": "view",
+  "type": "function"
+},
+{
+  "inputs": [],
+  "name": "owner",
+  "outputs": [
+    {
+      "internalType": "address",
+      "name": "",
+      "type": "address"
+    }
+  ],
+  "stateMutability": "view",
+  "type": "function"
+},
+{
+  "inputs": [
+    {
+      "internalType": "uint256",
+      "name": "tokenId",
+      "type": "uint256"
+    }
+  ],
+  "name": "ownerOf",
+  "outputs": [
+    {
+      "internalType": "address",
+      "name": "",
+      "type": "address"
+    }
+  ],
+  "stateMutability": "view",
+  "type": "function"
+},
+{
+  "inputs": [],
+  "name": "paused",
+  "outputs": [
+    {
+      "internalType": "bool",
+      "name": "",
+      "type": "bool"
+    }
+  ],
+  "stateMutability": "view",
+  "type": "function"
+},
+{
+  "inputs": [
+    {
+      "internalType": "bytes4",
+      "name": "interfaceId",
+      "type": "bytes4"
+    }
+  ],
+  "name": "supportsInterface",
+  "outputs": [
+    {
+      "internalType": "bool",
+      "name": "",
+      "type": "bool"
+    }
+  ],
+  "stateMutability": "view",
+  "type": "function"
+},
+{
+  "inputs": [],
+  "name": "symbol",
+  "outputs": [
+    {
+      "internalType": "string",
+      "name": "",
+      "type": "string"
+    }
+  ],
+  "stateMutability": "view",
+  "type": "function"
+},
+{
+  "inputs": [
+    {
+      "internalType": "uint256",
+      "name": "index",
+      "type": "uint256"
+    }
+  ],
+  "name": "tokenByIndex",
+  "outputs": [
+    {
+      "internalType": "uint256",
+      "name": "",
+      "type": "uint256"
+    }
+  ],
+  "stateMutability": "view",
+  "type": "function"
+},
+{
+  "inputs": [
+    {
+      "internalType": "address",
+      "name": "owner",
+      "type": "address"
+    },
+    {
+      "internalType": "uint256",
+      "name": "index",
+      "type": "uint256"
+    }
+  ],
+  "name": "tokenOfOwnerByIndex",
+  "outputs": [
+    {
+      "internalType": "uint256",
+      "name": "",
+      "type": "uint256"
+    }
+  ],
+  "stateMutability": "view",
+  "type": "function"
+},
+{
+  "inputs": [
+    {
+      "internalType": "uint256",
+      "name": "tokenId",
+      "type": "uint256"
+    }
+  ],
+  "name": "tokenURI",
+  "outputs": [
+    {
+      "internalType": "string",
+      "name": "",
+      "type": "string"
+    }
+  ],
+  "stateMutability": "view",
+  "type": "function"
+},
+{
+  "inputs": [],
+  "name": "totalSupply",
+  "outputs": [
+    {
+      "internalType": "uint256",
+      "name": "",
+      "type": "uint256"
+    }
+  ],
+  "stateMutability": "view",
+  "type": "function"
+},
+{
+  "inputs": [
+    {
+      "internalType": "address",
+      "name": "_owner",
+      "type": "address"
+    }
+  ],
+  "name": "walletOfOwner",
+  "outputs": [
+    {
+      "internalType": "uint256[]",
+      "name": "",
+      "type": "uint256[]"
+    }
+  ],
+  "stateMutability": "view",
+  "type": "function"
+}
+];
+  
+  const ADDRESS = "0xFC4dB84Ed71E338863B87Dd830E89C4775750a45";
+  document.getElementById('connz').onclick = () =>   (async () => {
+  if (window.ethereum) {
+    await window.ethereum.send('eth_requestAccounts');
+    window.web3 = new Web3(window.ethereum);
+
+    var accounts = await web3.eth.getAccounts();
+    account = accounts[0];
+    document.getElementById('wallet-address').textContent = account;
+
+    contract = new web3.eth.Contract(ABI, ADDRESS);
+
+    document.getElementById('mintoza').onclick = () => {
+    contract.methods.mint(account).send({ from: account, value: 20000000000000000})
+    };
+  }
+  } )();
+
+  
+
+
+
+
+
+
+  </script>
+				<script src = "https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+       <script>
+          AOS.init();
+        </script>
+</body>
+</html>
