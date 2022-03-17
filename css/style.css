@@ -72,7 +72,7 @@ body  {
   mask-size: 2300% 100%;
   border: none;
   color: #fff;
-  cursor: pointer;
+  
   -webkit-animation: ani2 0.7s steps(22) forwards;
   animation: ani2 0.7s steps(22) forwards;
 }
@@ -114,7 +114,7 @@ body  {
   mask-size: 3000% 100%;
   border: none;
   color: #fff;
-  cursor: pointer;
+
   -webkit-animation: ani2 0.7s steps(29) forwards;
   animation: ani2 0.7s steps(29) forwards;
 }
@@ -231,7 +231,7 @@ a {
   mask-size: 7100% 100%;
   border: none;
   color: #fff;
-  cursor: pointer;
+ 
   -webkit-animation: ani2 0.7s steps(70) forwards;
   animation: ani2 0.7s steps(70) forwards;
 }
@@ -266,7 +266,7 @@ a {
   background-size: cover;
   -webkit-box-shadow: 0 20px 20px -10px rgba(0, 0, 0, 0.5);
           box-shadow: 0 20px 20px -10px rgba(0, 0, 0, 0.5);
-  cursor: pointer;
+
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   -webkit-transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 3.55);

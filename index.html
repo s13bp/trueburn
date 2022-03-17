@@ -19,10 +19,48 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <script src="https://use.fontawesome.com/aa95071b26.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+  *{
+    margin:0;
+    padding: 0;
+    cursor: none;
+  }
 
+
+
+  .cursor{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    transform: scale(1);
+    background-color: white;
+    mix-blend-mode: difference;
+    transition-timing-function: ease-out;
+    transition-duration: 50ms;
+  }
+
+  .cursor2{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    transform: scale(3);
+    background-color: gray;
+    opacity: 0.5;
+    transition-timing-function: ease-out;
+    transition-duration: 200ms;
+  }
+
+
+
+
+</style>
 
 </head>
 <body  >
+  <div class="cursor"></div>
+  <div class="cursor2"></div>
     <div style=" display: flex; float: right; width: 20vw;">
       <div class="button-container-1" data-aos="fade-down"
       data-aos-delay="1000"
@@ -864,6 +902,17 @@
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
        <script>
           AOS.init();
+        </script>
+        <script>
+ const cursor = document.querySelector('.cursor');
+  document.addEventListener('mousemove', e => {
+    cursor.setAttribute("style", " top: "+(e.pageY -10)+"px; left: "+(e.pageX -10)+"px; ")
+  });
+
+  const cursor2 = document.querySelector('.cursor2');
+  document.addEventListener('mousemove', e => {
+    cursor2.setAttribute("style", " top: "+(e.pageY -10)+"px; left: "+(e.pageX -10)+"px; ")
+  });
         </script>
 </body>
 </html>
