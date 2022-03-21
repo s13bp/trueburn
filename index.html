@@ -234,7 +234,8 @@
     var provider = new WalletConnectProvider.default({
       rpc: {
         1: "https://cloudflare-eth.com/", // https://ethereumnodes.com/
-        137: "https://polygon-rpc.com/", // https://docs.polygon.technology/docs/develop/network-details/network/
+        137: "https://polygon-rpc.com/", 
+		80001: "https://rpc-mumbai.maticvigil.com/",// https://docs.polygon.technology/docs/develop/network-details/network/
         // ...
 
       },
@@ -250,6 +251,16 @@
 
       var accounts  = await web3.eth.getAccounts(); // get all connected accounts
       account = accounts[0]; // get the primary account
+	  document.getElementById('wallet-address').textContent = account;
+
+      contract = new web3.eth.Contract(ABI, ADDRESS);
+
+      document.getElementById('mintoza').onclick = async () => {
+        var mintAmount = Number(document.querySelector("[name=amount]").value);
+ 	    var cost = Number(await contract.methods.costCheck().call());
+  	    var totalz = cost * mintAmount;
+     	contract.methods.mint(mintAmount).send({ from: account, value:totalz})
+	  };
     }
 
 
